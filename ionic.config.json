@@ -1,0 +1,7 @@
+{
+  "name": "avtoinvest",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
