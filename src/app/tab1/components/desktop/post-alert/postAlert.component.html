@@ -1,0 +1,59 @@
+<ion-header [translucent]="true">
+    <ion-toolbar color = "primary">
+      <ion-title>Добавить этап</ion-title>
+      <ion-buttons slot="end">
+        <ion-button (click) = "close()">Закрыть</ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+      <ion-grid>
+          <ion-row>
+              <ion-col size-md="10" offset-md="1">
+                <ion-item>
+                    <ion-label>Машина</ion-label>
+                    <ion-select [(ngModel)] = "notification.carModel" interface="popover">
+                      <ion-select-option value="Volvo FH-12 (20 т.)">Volvo FH-12 (20 т.)</ion-select-option>
+                      <ion-select-option value="Volvo FH-12 (15 т.)">Volvo FH-12 (15 т.)</ion-select-option>
+                      <ion-select-option value="Hyundai HD-78">Hyundai HD-78</ion-select-option>
+                      <ion-select-option value="Mercedes-benz Atego">Mercedes-benz Atego</ion-select-option>
+                      <ion-select-option value="Mersedes-benz Sprinter">Mersedes-benz Sprinter</ion-select-option>
+                    </ion-select>
+                  </ion-item>
+                  <ion-item>
+                    <ion-label>Кузов</ion-label>
+                    <ion-select [(ngModel)] = "notification.body" interface="popover">
+                      <ion-select-option value="Рефрижератор">Рефрижератор</ion-select-option>
+                      <ion-select-option value="Тент">Тент</ion-select-option>
+                    </ion-select>
+                  </ion-item>
+                  <ion-item>
+                    <ion-label position="floating">Объем, м3</ion-label>
+                    <ion-input [(ngModel)] = "notification.volume"></ion-input>
+                  </ion-item>
+                  <ion-item>
+                    <ion-label position="floating">Грузоподъемность, т</ion-label>
+                    <ion-input [(ngModel)] = "notification.capasity"></ion-input>
+                  </ion-item>
+                  <ion-item>
+                    <ion-label position="floating">Откуда</ion-label>
+                    <ion-input [(ngModel)] = "notification.from"></ion-input>
+                  </ion-item>
+                  <ion-item>
+                    <ion-label position="floating">Куда</ion-label>
+                    <ion-input [(ngModel)] = "notification.to"></ion-input>
+                  </ion-item>
+                  <ion-item>
+                    <ion-label position="floating">Дата погрузки</ion-label>
+                    <ion-datetime [(ngModel)] = "notification.date" displayFormat="DD/MM/YYYY"></ion-datetime>
+                  </ion-item>
+                  <ion-item>
+                    <ion-label position="floating">Ставка, руб/км</ion-label>
+                    <ion-input [(ngModel)] = "notification.bet"></ion-input>
+                  </ion-item>
+                  <ion-button (click) = "close()" color="success" style="margin-top: 20px;" expand="block">Найти</ion-button>
+              </ion-col>
+          </ion-row>
+      </ion-grid>
+  </ion-content>

@@ -1,0 +1,67 @@
+{
+    "company": [
+        {
+            "name": "Автоинвест",
+            "profile": "Перевозчик",
+            "country": "Россия",
+            "city": "Кострома",
+            "ati_code": "100 100",
+            "inn": "13372281488",
+            "ogrnip": "100500100",
+            "trucks_amount": "30",
+            "years": "12",
+            "cargo_amount": "3500+",
+            "description": "Наш автопарк состоит из грузовиков различной грузоподъёмности (1.5 - 20 тонн). Болшинство автомобилей оборудованы изотермическими фургонами или прицепами-рефрижераторами и предназначены для перевозки скоропортящихся товаров.",
+            "autopark": [
+                {
+                    "name": "Volvo FH-12",
+                    "lifting": "20 тонн",
+                    "size": "92 м3",
+                    "amount": "15",
+                    "type": "Рефрижератор",
+                    "description": "Keep close to Nature's heart... and break clear away, once in awhile, and climb a mountain or spend a week in the woods. Wash your spirit clean."
+                },
+                {
+                    "name": "Volvo FH-12",
+                    "lifting": "15 тонн",
+                    "size": "60 м3",
+                    "amount": "3",
+                    "type": "Рефрижератор",
+                    "description": "Keep close to Nature's heart... and break clear away, once in awhile, and climb a mountain or spend a week in the woods. Wash your spirit clean."
+                },
+                {
+                    "name": "Mercedes-Benz Atego",
+                    "lifting": "7 тонн",
+                    "size": "45 м3",
+                    "amount": "2",
+                    "type": "Рефрижератор",
+                    "description": "Keep close to Nature's heart... and break clear away, once in awhile, and climb a mountain or spend a week in the woods. Wash your spirit clean."
+                },
+                {
+                    "name": "Volvo FH-12",
+                    "lifting": "20 тонн",
+                    "size": "92 м3",
+                    "amount": "2",
+                    "type": "Тент",
+                    "description": "Keep close to Nature's heart... and break clear away, once in awhile, and climb a mountain or spend a week in the woods. Wash your spirit clean."
+                },
+                {
+                    "name": "Mercedes-Benz Sprinter",
+                    "lifting": "3 тонн",
+                    "size": "25 м3",
+                    "amount": "1",
+                    "type": "Рефрижератор",
+                    "description": "Keep close to Nature's heart... and break clear away, once in awhile, and climb a mountain or spend a week in the woods. Wash your spirit clean."
+                },
+                {
+                    "name": "Hyundai HD 78",
+                    "lifting": "5 тонн",
+                    "size": "35 м3",
+                    "amount": "5",
+                    "type": "Рефрижератор",
+                    "description": "Keep close to Nature's heart... and break clear away, once in awhile, and climb a mountain or spend a week in the woods. Wash your spirit clean."
+                }               
+            ]
+        }
+    ]
+}
