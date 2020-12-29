@@ -2,6 +2,7 @@
     "company": [
         {
             "name": "Автоинвест",
+            "avatar": "https://sun1-87.userapi.com/FJGAssnCHGDkqlujhkb0faoJOVc_ZZPbEhOgWA/DPW7X636zyU.jpg",
             "profile": "Перевозчик",
             "country": "Россия",
             "city": "Кострома",
@@ -15,6 +16,7 @@
             "autopark": [
                 {
                     "name": "Volvo FH-12",
+                    "url": "https://sun9-61.userapi.com/impf/3dVSCsICE6QSqKZnWfOwhjLlFUsJcOOB0x5pKA/zw0b74kC5kE.jpg?size=1280x960&quality=96&proxy=1&sign=bdfca32c1ffcffe01d1e73646878965d",
                     "lifting": "20 тонн",
                     "size": "92 м3",
                     "amount": "15",
@@ -23,6 +25,7 @@
                 },
                 {
                     "name": "Volvo FH-12",
+                    "url": "https://sun9-58.userapi.com/impf/RTqRXJZwk96CuxL_D27Vh6Z1vGezkorcqIugZg/4IORGSyc4cI.jpg?size=1280x960&quality=96&proxy=1&sign=f8ff900e767be02c25e657b971981d21",
                     "lifting": "15 тонн",
                     "size": "60 м3",
                     "amount": "3",
@@ -31,6 +34,7 @@
                 },
                 {
                     "name": "Mercedes-Benz Atego",
+                    "url": "https://sun9-41.userapi.com/impf/F_hDzU7kiZAvQ99W2k2ywboHi8NcYocg3Qw_yg/Og5UzfMoGm8.jpg?size=1280x960&quality=96&proxy=1&sign=2e355cf36ced2b9887a87c05a18ad250",
                     "lifting": "7 тонн",
                     "size": "45 м3",
                     "amount": "2",
@@ -39,6 +43,7 @@
                 },
                 {
                     "name": "Volvo FH-12",
+                    "url": "https://sun9-5.userapi.com/impf/1rNOMN0y3VomQqukTlFqrl1BFM9CM46J2ZEeRg/CbBxLRtMjIw.jpg?size=1280x960&quality=96&proxy=1&sign=c0037919a07b06f752598463f1b46897",
                     "lifting": "20 тонн",
                     "size": "92 м3",
                     "amount": "2",
@@ -47,6 +52,7 @@
                 },
                 {
                     "name": "Mercedes-Benz Sprinter",
+                    "url": "https://sun9-34.userapi.com/impf/u-Wy_6Eqi3o0twY1z4iYWdTc6iCv1FvQ5f4ebA/0Ok3eVaBqpk.jpg?size=1280x960&quality=96&proxy=1&sign=77b5a593920d17d0703e80ab3073862b",
                     "lifting": "3 тонн",
                     "size": "25 м3",
                     "amount": "1",
@@ -55,6 +61,7 @@
                 },
                 {
                     "name": "Hyundai HD 78",
+                    "url": "https://sun9-40.userapi.com/impf/Wr9LIVIAsY6uSibXeU0NvD8XPxYRGpXdxRHItA/zLQd0JKOY58.jpg?size=1280x960&quality=96&proxy=1&sign=b999e0a93d63f12c97bef649fba41960",
                     "lifting": "5 тонн",
                     "size": "35 м3",
                     "amount": "5",
@@ -62,6 +69,12 @@
                     "description": "Keep close to Nature's heart... and break clear away, once in awhile, and climb a mountain or spend a week in the woods. Wash your spirit clean."
                 }               
             ]
+        }
+    ],
+    "transport_list": [
+        {
+            "id": "1",
+            "from": "kostroma"
         }
     ]
 }

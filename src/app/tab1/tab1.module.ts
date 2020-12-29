@@ -10,13 +10,15 @@ import { LoginComponent } from './components/login/login.component';
 import { DesktopComponent } from './components/desktop/desktop.component';
 import { PostAlert } from './components/desktop/post-alert/postAlert.component';
 
+
 @NgModule({
   imports: [
     IonicModule,
     CommonModule,
     FormsModule,
     ExploreContainerComponentModule,
-    Tab1PageRoutingModule
+    Tab1PageRoutingModule,
+   
   ],
   declarations: [Tab1Page, LoginComponent, DesktopComponent, PostAlert]
 })

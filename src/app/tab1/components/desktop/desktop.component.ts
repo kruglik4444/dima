@@ -3,6 +3,7 @@ import { PostAlert } from './post-alert/postAlert.component';
 import { ModalController } from '@ionic/angular';
 import {Location} from '@angular/common';
 import { ActionSheetController } from '@ionic/angular';
+import { GetNotifyService } from '../../services/get-notify.service';
 
 @Component({
   selector: 'app-desktop',
@@ -11,7 +12,14 @@ import { ActionSheetController } from '@ionic/angular';
 })
 export class DesktopComponent implements OnInit {
 
-  constructor(private location: Location, public modalController: ModalController, public actionSheetController: ActionSheetController) { }
+  profile;
+
+  constructor(private location: Location, public modalController: ModalController, public actionSheetController: ActionSheetController, private getInfoService: GetNotifyService) {
+    this.getInfoService.getProfileInfo().subscribe(response => {
+      this.profile = response;
+      console.log(response);
+    })
+   }
 
   selectCar(){
     

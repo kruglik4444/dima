@@ -1,7 +1,6 @@
 export class TruckNotification{
 
     constructor(
-        public id: string,
         public carModel: string,
         public body: string,
         public volume: string,
@@ -10,5 +9,6 @@ export class TruckNotification{
         public to: string,
         public date: string,
         public bet: string,
+        public executor: string,
       ) {  }
 }

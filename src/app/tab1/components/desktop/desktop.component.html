@@ -6,7 +6,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<!-- <ion-content>
   <ion-grid>
     <ion-row>
       <ion-col size-md="8" offset-md="2">
@@ -209,6 +209,135 @@
           <ion-card-content>
             Keep close to Nature's heart... and break clear away, once in awhile,
             and climb a mountain or spend a week in the woods. Wash your spirit clean.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content> -->
+
+<ion-content *ngIf = "profile">
+  <ion-grid>
+    <ion-row>
+      <ion-col size-md="8" offset-md="2">
+        <ion-row>
+          <ion-col size-md="6">
+            <ion-card>
+              <ion-card-content>
+                <img src="https://sun1-87.userapi.com/FJGAssnCHGDkqlujhkb0faoJOVc_ZZPbEhOgWA/DPW7X636zyU.jpg">
+                <ion-button  slot="end">Редактировать</ion-button>
+                <ion-button  slot="end"><ion-icon name="cellular-outline"></ion-icon></ion-button>
+                <ion-button (click)="postAlert()"  slot="end"><ion-icon name="add-circle-outline"></ion-icon></ion-button>
+                <ion-button (click) = "presentActionSheet()" expand="block">Действия</ion-button>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+          <ion-col size-md="6">
+            <ion-card>
+              <ion-item>
+                <ion-label>{{profile.name}}</ion-label>
+                <ion-icon name="beer-outline" slot="end"></ion-icon>
+              </ion-item>
+            
+              <ion-card-content>
+               <ion-row>
+                 <ion-col  size-md="4">
+                  Профиль
+                 </ion-col>
+                 <ion-col style="color: black;" size-md="6">
+                  {{profile.profile}}
+                 </ion-col>
+               </ion-row>
+               <ion-row>
+                <ion-col  size-md="4">
+                 Страна
+                </ion-col>
+                <ion-col style="color: black;" size-md="6">
+                 {{profile.country}}
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col  size-md="4">
+                 Город
+                </ion-col>
+                <ion-col style="color: black;" size-md="6">
+                 {{profile.city}}
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col  size-md="4">
+                 Код ATI
+                </ion-col>
+                <ion-col style="color: black;" size-md="6">
+                 {{profile.ati_code}}
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col  size-md="4">
+                 ИНН
+                </ion-col>
+                <ion-col style="color: black;" size-md="6">
+                 {{profile.inn}}
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col  size-md="4">
+                 ОГРНИП
+                </ion-col>
+                <ion-col style="color: black;" size-md="6">
+                 {{profile.ogrnip}}
+                </ion-col>
+              </ion-row>
+              </ion-card-content>
+            </ion-card>
+
+            <ion-card >
+              <ion-card-content>
+                <ion-row>
+                  <ion-col size-md="4" >
+                    <h1 style="color: #3880ff;">{{profile.trucks_amount}} ед.</h1>
+                    <p>Транспорта</p>
+                  </ion-col>
+                  <ion-col size-md="4">
+                    <h1 style="color: #3880ff;">{{profile.years}} лет</h1>
+                    <p>На рынке</p>
+                  </ion-col>
+                  <ion-col size-md="4">
+                    <h1 style="color: #3880ff;">{{profile.cargo_amount}}</h1>
+                    <p>Перевозок</p>
+                  </ion-col>
+                </ion-row>
+              </ion-card-content>
+            </ion-card>
+
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size-md="8" offset-md="2">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Описание</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <h4>{{profile.description}}</h4>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-justify-content-center">
+      <ion-col *ngFor="let car of profile.autopark" size-md="4" size-xs="12">
+        <ion-card (click)="selectCar()">
+          <img src="{{car.url}}">
+          <ion-card-header>
+            <ion-card-subtitle>{{car.type}}</ion-card-subtitle>
+            <ion-card-title>{{car.name}}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            {{car.description}}
           </ion-card-content>
         </ion-card>
       </ion-col>
